@@ -1,0 +1,1814 @@
+body{
+	background-color: #3498db;
+}
+.contain{
+  width:580px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ironmanClear{
+  display: none;
+}
+.hulkStart{
+  /*display: none;*/
+}
+.frame{
+  width:500px;
+  height: 500px;
+  background-color: #ecf0f1;
+  position: fixed;
+  top:50px;
+  border-style: solid;
+  border-width: 40px;
+  border-color: #f1c40f;
+}
+.head{
+  height: 50px;
+  width: 40px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 350px;
+  left: 230px;
+  border-radius: 18px;
+  z-index: 2;
+}
+.neck{
+  height: 19px;
+  width: 20px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 335px;
+  left: 240px;
+  z-index: 1;
+}
+.rightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 100px;
+  left: 255px;
+  border-radius: 15px; 
+  z-index: 2;
+}
+.leftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 100px;
+  left: 215px;
+  border-radius: 15px; 
+  z-index: 2;
+}
+.rightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 20px;
+  left: 255px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.leftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 20px;
+  left: 215px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.torso{
+  position: absolute;
+  bottom: 250px;
+  left: 200px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #eebb99;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+}
+.groin{
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 220px;
+  border-top: 50px solid #eebb99;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+}
+.leftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 305px;
+  left: 190px;
+  border-radius: 15px;
+}
+.rightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 305px;
+  left: 280px;
+  border-radius: 15px;
+}
+.leftBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 250px;
+  left: 180px;
+  border-radius: 15px;
+}
+.rightBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 250px;
+  left: 295px;
+  border-radius: 15px;
+}
+.leftForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 205px;
+  left: 180px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.rightForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 205px;
+  left: 295px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.rightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 258px;
+  width: 20px;
+  border-bottom: 25px solid #eebb99;
+  border-left: 5px solid #eebb99;
+  border-right: 10px solid transparent;
+}
+.leftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 207px;
+  width: 20px;
+  border-bottom: 25px solid #eebb99;
+  border-right: 5px solid #eebb99;
+  border-left: 10px solid transparent;
+}
+.rightHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 180px;
+  border-top: 40px solid #eebb99;
+  border-left: 10px solid transparent;
+}
+.leftHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 295px;
+  border-top: 40px solid #eebb99;
+  border-right: 10px solid transparent;
+}
+/*Ironman*/
+.ironmanHead{
+  height: 50px;
+  width: 40px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 540px;
+  left: 270px;
+  border-radius: 18px;
+  z-index: 2;
+  visibility: hidden;
+}
+.ironmanNeck{
+  height: 19px;
+  width: 20px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 540px;
+  left: 340px;
+  z-index: 1;
+  visibility: hidden;
+}
+.ironmanRightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 220px;
+  left: 540px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.ironmanLeftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 0px;
+  left: -70px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.ironmanRightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 320px;
+  left: 540px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.ironmanLeftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 200px;
+  left: -70px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.ironmanTorso{
+  position: absolute;
+  bottom: 290px;
+  left: 538px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #e74c3c;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+  visibility: hidden;
+}
+.ironmanGroin{
+  width: 40px;
+  position: absolute;
+  bottom: 300px;
+  left: -100px;
+  border-top: 50px solid #e74c3c;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  visibility: hidden;
+}
+.ironmanLeftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 355px;
+  left: -70px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.ironmanRightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 365px;
+  left: 540px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.ironmanLeftBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 300px;
+  left: 565px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.ironmanRightBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 450px;
+  left: 540px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.ironmanLeftForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 65px;
+  left: -65px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.ironmanRightForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 5px;
+  left: 565px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.ironmanRightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 540px;
+  width: 20px;
+  border-bottom: 25px solid #e74c3c;
+  border-left: 5px solid #e74c3c;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.ironmanLeftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: -75px;
+  width: 20px;
+  border-bottom: 25px solid #e74c3c;
+  border-right: 5px solid #e74c3c;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+}
+.ironmanRightHand{
+  width: 15px;
+  position: absolute;
+  bottom: 540px;
+  left: 180px;
+  border-top: 40px solid #e74c3c;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+}
+.ironmanLeftHand{
+  width: 15px;
+  position: absolute;
+  bottom: 540px;
+  left: 295px;
+  border-top: 40px solid #e74c3c;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.ironmanHead1{
+  height: 40px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 545px;
+  left: 275px;
+  border-radius: 18px;
+  z-index: 3;
+  visibility: hidden;
+}
+.ironmanChestCircle{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #f1c40f;
+  bottom: 285px;
+  left: 235px;
+  z-index: 2;
+  display: none;
+}
+.ironmanWidowsPeak{
+  position: absolute;
+  z-index: 3;
+  width: 4px;
+  border-top: 7px solid #e74c3c;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  left:284px;
+  bottom: 578px;
+  visibility: hidden;
+}
+.ironmanLeftEye{
+  position: absolute;
+  z-index: 3;
+  background-color: #34495e;
+  height: 3px;
+  width: 6px;
+  left: 240px;
+  bottom: 377px;
+  display: none;
+}
+.ironmanRightEye{
+  position: absolute;
+  z-index: 3;
+  background-color: #34495e;
+  height: 3px;
+  width: 6px;
+  left: 254px;
+  bottom: 377px;
+  display: none;
+}
+.ironmanMouth{
+  position: absolute;
+  z-index: 3;
+  background-color: #34495e;
+  height: 3px;
+  width: 10px;
+  left: 245px;
+  bottom: 364px;
+  display: none;
+}
+.glow{
+  -webkit-box-shadow:0 0 20px #00FFFF; 
+  -moz-box-shadow: 0 0 20px #00FFFF; 
+  box-shadow:0 0 20px #00FFFF;
+}
+.hulkPantsTop{
+  background-color: #8e44ad;
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  bottom: 184px;
+  left: 540px;
+  z-index: 3;
+  visibility: hidden;
+}
+.hulkPantsLeft{
+  background-color: #8e44ad;
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  bottom: 124px;
+  left: 540px;
+  z-index: 3;
+  visibility: hidden;
+}
+.hulkPantsRight{
+  background-color: #8e44ad;
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  bottom: 124px;
+  left: 580px;
+  z-index: 3;
+  visibility: hidden;
+}
+.cyclopsHead{
+  height: 50px;
+  width: 40px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 350px;
+  left: 590px;
+  border-radius: 18px;
+  z-index: 2;
+  visibility: hidden;
+}
+.cyclopsNeck{
+  height: 19px;
+  width: 20px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 335px;
+  left: 600px;
+  z-index: 1;
+  visibility: hidden;
+}
+.cyclopsRightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 615px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.cyclopsLeftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 575px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.cyclopsRightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 20px;
+  left: 615px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.cyclopsLeftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 20px;
+  left: 575px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.cyclopsTorso{
+  position: absolute;
+  bottom: 250px;
+  left: 560px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #2980b9;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+  visibility: hidden;
+}
+.cyclopsGroin{
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 580px;
+  border-top: 50px solid #f1c40f;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  visibility: hidden;
+}
+.cyclopsLeftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 305px;
+  left: 550px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.cyclopsRightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 305px;
+  left: 640px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.cyclopsLeftBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 250px;
+  left: 540px;
+  border-radius: 15px;
+  visibility: hidden;
+  z-index: 3;
+}
+.cyclopsRightBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 250px;
+  left: 655px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.cyclopsLeftForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 205px;
+  left: 540px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.cyclopsRightForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 205px;
+  left: 655px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.cyclopsRightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 618px;
+  width: 20px;
+  border-bottom: 25px solid #f1c40f;
+  border-left: 5px solid #f1c40f;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.cyclopsLeftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 567px;
+  width: 20px;
+  border-bottom: 25px solid #f1c40f;
+  border-right: 5px solid #f1c40f;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+}
+.cyclopsRightHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 540px;
+  border-top: 40px solid #f1c40f;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+  z-index: 4;
+}
+.cyclopsLeftHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 655px;
+  border-top: 40px solid #f1c40f;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.cyclopsBelt{
+  width: 54px;
+  position: absolute;
+  bottom: 235px;
+  left: 580px;
+  border-top: 15px solid #e74c3c;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  visibility: hidden;
+  z-index: 3;
+}
+.cyclopsBelt1{
+  height: 9px;
+  width: 20px;
+  background-color: #e74c3c;
+  border: 3px solid #34495e;
+  position: absolute;
+  bottom: 235px;
+  left: 597px;
+  z-index: 3;
+  visibility: hidden;
+}
+.cyclopsHead1{
+  height: 26px;
+  width: 24px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 350px;
+  left: 238px;
+  border-radius: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  visibility: hidden;
+  z-index: 3;
+}
+.cyclopsVisor{
+  height: 13px;
+  width: 46px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 372px;
+  left: 587px;
+  border-radius: 18px;
+  z-index: 3;
+  visibility: hidden;
+}
+.cyclopsVisor1{
+  height: 6px;
+  width: 46px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 375px;
+  left: 587px;
+  border-radius: 18px;
+  z-index: 3;
+  visibility: hidden;
+}
+.cyclopsBeam{
+  height: 6px;
+  width: 6px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 375px;
+  left: 267px;
+  border-radius: 18px;
+  z-index: 3;
+  opacity: .8;
+  visibility: hidden;
+  -webkit-box-shadow:0 0 30px #e74c3c; 
+  -moz-box-shadow: 0 0 30px #e74c3c; 
+  box-shadow:0 0 30px #e74c3c;
+}
+.cyclopsBeam1{
+  height: 6px;
+  width: 46px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 375px;
+  left: 227px;
+  border-radius: 18px;
+  z-index: 4;
+  opacity: .8;
+  visibility: hidden;
+  -webkit-box-shadow:0 0 30px #e74c3c; 
+  -moz-box-shadow: 0 0 30px #e74c3c; 
+  box-shadow:0 0 30px #e74c3c;
+}
+.wolverineHead{
+  height: 50px;
+  width: 40px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 350px;
+  left: 590px;
+  border-radius: 18px;
+  z-index: 2;
+  visibility: hidden;
+}
+.wolverineNeck{
+  height: 19px;
+  width: 20px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 335px;
+  left: 600px;
+  z-index: 1;
+  visibility: hidden;
+}
+.wolverineRightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 100px;
+  left: 615px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.wolverineLeftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 100px;
+  left: 575px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.wolverineRightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 20px;
+  left: 615px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.wolverineLeftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 20px;
+  left: 575px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.wolverineTorso{
+  position: absolute;
+  bottom: 250px;
+  left: 560px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #f1c40f;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+  visibility: hidden;
+}
+.wolverineGroin{
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 580px;
+  border-top: 50px solid #8B0000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineLeftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 305px;
+  left: 550px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.wolverineRightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 305px;
+  left: 640px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.wolverineLeftForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 205px;
+  left: 540px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.wolverineRightForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #8B0000;
+  position: absolute;
+  bottom: 205px;
+  left: 655px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.wolverineRightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 618px;
+  width: 20px;
+  border-bottom: 25px solid #8B0000;
+  border-left: 5px solid #8B0000;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.wolverineLeftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 567px;
+  width: 20px;
+  border-bottom: 25px solid #8B0000;
+  border-right: 5px solid #8B0000;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+}
+.wolverineRightHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 640px;
+  border-top: 40px solid #8B0000;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+  z-index: 4;
+}
+.wolverineLeftHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 655px;
+  border-top: 40px solid #8B0000;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+  z-index: 4;
+}
+.wolverineBelt{
+  width: 54px;
+  position: absolute;
+  bottom: 235px;
+  left: 580px;
+  border-top: 15px solid #e74c3c;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineBelt1{
+  height: 9px;
+  width: 20px;
+  background-color: #e74c3c;
+  border: 3px solid #f1c40f;
+  position: absolute;
+  bottom: 235px;
+  left: 597px;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineHead1{
+  height: 26px;
+  width: 24px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 350px;
+  left: 238px;
+  border-radius: 18px;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineHead2{
+  height: 24px;
+  width: 40px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 377px;
+  left: 590px;
+  z-index: 3;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  visibility: hidden;
+}
+.wolverineRightEye{
+  height: 10px;
+  width: 18px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 377px;
+  left: 512px;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineLeftEye{
+  height: 10px;
+  width: 18px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 377px;
+  left: 590px;
+  z-index: 3;
+  visibility: hidden;
+}
+.wolverineRightHorn{
+  width: 0px;
+  position: absolute;
+  bottom: 385px;
+  left: 615px;
+  border-bottom: 30px solid #34495e;
+  border-left: 18px solid transparent;
+  z-index: 3;
+  transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  -webkit-transform: rotate(13deg);
+  visibility: hidden;
+}
+.wolverineLeftHorn{
+  width: 0px;
+  position: absolute;
+  bottom: 385px;
+  left: 587px;
+  border-bottom: 30px solid #34495e;
+  border-right: 18px solid transparent;
+  z-index: 3;
+  transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-13deg);
+  visibility: hidden;
+}
+.wolverineTorso1{
+  position: absolute;
+  bottom: 250px;
+  left: 560px;
+  height: 0;
+  width: 10px;
+  border-top: 85px solid #8B0000;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+  visibility: hidden;
+}
+.wolverineLeftClaws{
+  position: absolute;
+  top:288px;
+  left:136px;
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  visibility: hidden;
+  z-index: 3;
+}
+.wolverineLeftClaw{
+  margin-right: 2px;
+  height: 40px;
+  border-left: 3px solid transparent;
+  border-right: 5px solid #95a5a6;
+  border-bottom: 5px solid transparent;
+  position: relative;
+  float: left;
+}
+.wolverineRightClaws{
+  position: absolute;
+  top:288px;
+  left:337px;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  visibility: hidden;
+  z-index: 3;
+}
+.wolverineRightClaw{
+  margin-right: 2px;
+  height: 40px;
+  border-right: 3px solid transparent;
+  border-left: 5px solid #95a5a6;
+  border-bottom: 5px solid transparent;
+  position: relative;
+  float: left;
+}
+
+.thorRightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 615px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.thorLeftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 575px;
+  border-radius: 15px; 
+  z-index: 2;
+  visibility: hidden;
+}
+.thorRightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 20px;
+  left: 615px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.thorLeftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 20px;
+  left: 575px;
+  border-radius: 15px;
+  z-index: 1;
+  visibility: hidden;
+}
+.thorTorso{
+  position: absolute;
+  bottom: 250px;
+  left: 560px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #34495e;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+  visibility: hidden;
+}
+.thorGroin{
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 580px;
+  border-top: 50px solid #34495e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorLeftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 305px;
+  left: 550px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.thorRightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 305px;
+  left: 640px;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.thorRightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 618px;
+  width: 20px;
+  border-bottom: 25px solid #f1c40f;
+  border-left: 5px solid #f1c40f;
+  border-right: 10px solid transparent;
+  visibility: hidden;
+}
+.thorLeftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 567px;
+  width: 20px;
+  border-bottom: 25px solid #f1c40f;
+  border-right: 5px solid #f1c40f;
+  border-left: 10px solid transparent;
+  visibility: hidden;
+}
+.thorBelt{
+  width: 54px;
+  position: absolute;
+  bottom: 235px;
+  left: 580px;
+  border-top: 15px solid #f1c40f;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  visibility: hidden;
+  z-index: 3;
+}
+.thorHead1{
+  height: 24px;
+  width: 40px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 377px;
+  left: 590px;
+  z-index: 3;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  visibility: hidden;
+}
+.thorRightWing{
+  width: 0px;
+  position: absolute;
+  bottom: 388px;
+  left: 622px;
+  border-bottom: 20px solid #bdc3c7;
+  border-left: 10px solid transparent;
+  z-index: 3;
+  transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  -webkit-transform: rotate(13deg);
+  visibility: hidden;
+}
+.thorLeftWing{
+  width: 0px;
+  position: absolute;
+  bottom: 388px;
+  left: 588px;
+  border-bottom: 20px solid #bdc3c7;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -webkit-transform: rotate(-13deg);
+  visibility: hidden;
+}
+.thorLeftHair{
+  width: 5px;
+  position: absolute;
+  bottom: 317px;
+  left: 590px;
+  border-bottom: 60px solid #f1c40f;
+  border-right: 12px solid transparent;
+  z-index: 4;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  visibility: hidden;
+}
+.thorRightHair{
+  width: 5px;
+  position: absolute;
+  bottom: 317px;
+  left: 614px;
+  border-bottom: 60px solid #f1c40f;
+  border-left: 12px solid transparent;
+  z-index: 4;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  visibility: hidden;
+}
+.thorRightCircleTop{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 305px;
+  left: 619px;
+  border-radius: 9px;
+  visibility: hidden;
+  z-index: 3;
+}
+.thorRightCircleMiddle{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 268px;
+  left: 615px;
+  border-radius: 9px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorRightCircleBottom{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 212px;
+  left: 613px;
+  border-radius: 9px;
+  visibility: hidden;
+  z-index: 3;
+}
+.thorLeftCircleTop{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 305px;
+  left: 583px;
+  border-radius: 9px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorLeftCircleMiddle{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 268px;
+  left: 587px;
+  border-radius: 9px;
+  visibility: hidden;
+  z-index: 3;
+}
+.thorLeftCircleBottom{
+  height: 18px;
+  width: 18px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 212px;
+  left: 590px;
+  border-radius: 9px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorRightWristBand{
+  height: 24px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 213px;
+  left: 655px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorRightWristBand1{
+  height: 8px;
+  width: 25px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 221px;
+  left: 655px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorLeftWristBand{
+  height: 24px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 213px;
+  left: 540px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorLeftWristBand1{
+  height: 8px;
+  width: 25px;
+  background-color: #34495e;
+  position: absolute;
+  bottom: 221px;
+  left: 540px;
+  z-index: 3;
+  visibility: hidden;
+}
+.thorRightKnee{
+  width: 30px;
+  position: absolute;
+  bottom: 100px;
+  left: 570px;
+  border-top: 30px solid #34495e;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  z-index: 4;
+  visibility: hidden;
+}
+.thorLeftKnee{
+  width: 30px;
+  position: absolute;
+  bottom: 100px;
+  left: 610px;
+  border-top: 30px solid #34495e;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  z-index: 4;
+  visibility: hidden;
+}
+.thorCape{
+  height: 340px;
+  width: 150px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 0px;
+  left: 535px;
+  z-index: -1;
+  border-top-right-radius: 36px;
+  border-top-left-radius: 36px;
+  visibility: hidden;
+}
+.thorHammer{
+  height: 100px;
+  width: 10px;
+  background-color: #A0522D;
+  position: absolute;
+  bottom: 400px;
+  left: 350px;
+  transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  z-index: 1;
+}
+.capHead{
+  height: 50px;
+  width: 40px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 350px;
+  left: 230px;
+  border-radius: 18px;
+  z-index: 2;
+}
+.capNeck{
+  height: 19px;
+  width: 20px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 335px;
+  left: 240px;
+  z-index: 1;
+}
+.capRightThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 255px;
+  border-radius: 15px; 
+  z-index: 2;
+}
+.capLeftThigh{
+  height: 115px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 100px;
+  left: 215px;
+  border-radius: 15px; 
+  z-index: 2;
+}
+.capRightShin{
+  height: 100px;
+  width: 30px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 20px;
+  left: 255px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.capLeftShin{
+  height: 100px;
+  width: 30px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 20px;
+  left: 215px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.capTorso{
+  position: absolute;
+  bottom: 250px;
+  left: 200px;
+  height: 0;
+  width: 60px;
+  border-top: 85px solid #2980b9;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+  border-radius: 20px;
+}
+.capGroin{
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 220px;
+  border-top: 50px solid #e74c3c;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 3;
+}
+.capLeftShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 305px;
+  left: 190px;
+  border-radius: 15px;
+}
+.capRightShoulder{
+  height: 30px;
+  width: 30px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 305px;
+  left: 280px;
+  border-radius: 15px;
+}
+.capLeftBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #FFFFF0;
+  position: absolute;
+  bottom: 250px;
+  left: 180px;
+  border-radius: 15px;
+}
+.capRightBicep{
+  height: 70px;
+  width: 25px;
+  background-color: #FFFFF0;
+  position: absolute;
+  bottom: 250px;
+  left: 295px;
+  border-radius: 15px;
+}
+.capLeftForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 205px;
+  left: 180px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.capRightForearm{
+  height: 55px;
+  width: 25px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 205px;
+  left: 295px;
+  border-radius: 15px;
+  z-index: 1;
+}
+.capRightFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 258px;
+  width: 20px;
+  border-bottom: 25px solid #e74c3c;
+  border-left: 5px solid #e74c3c;
+  border-right: 10px solid transparent;
+}
+.capLeftFoot{
+  position: absolute;
+  bottom: 0px;
+  left: 207px;
+  width: 20px;
+  border-bottom: 25px solid #e74c3c;
+  border-right: 5px solid #e74c3c;
+  border-left: 10px solid transparent;
+}
+.capRightHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 180px;
+  border-top: 40px solid #e74c3c;
+  border-left: 10px solid transparent;
+}
+.capLeftHand{
+  width: 15px;
+  position: absolute;
+  bottom: 180px;
+  left: 295px;
+  border-top: 40px solid #e74c3c;
+  border-right: 10px solid transparent;
+}
+.capBelt{
+  width: 54px;
+  position: absolute;
+  bottom: 235px;
+  left: 220px;
+  border-top: 15px solid #34495e;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  z-index: 3;
+}
+.capBelt1{
+  height: 9px;
+  width: 20px;
+  background-color: #f1c40f;
+  border: 3px solid #34495e;
+  position: absolute;
+  bottom: 235px;
+  left: 237px;
+  z-index: 3;
+}
+.capLeftBicep1{
+  height: 35px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 285px;
+  left: 180px;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.capRightBicep1{
+  height: 35px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  bottom: 285px;
+  left: 295px;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.capHead1{
+  height: 26px;
+  width: 24px;
+  background-color: #eebb99;
+  position: absolute;
+  bottom: 350px;
+  left: 238px;
+  border-radius: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 3;
+}
+.capStripe1{
+  height: 0px;
+  width: 7px;
+  position: absolute;
+  bottom: 250px;
+  left: 212px;
+  z-index: 3;
+  border-top: 35px solid #e74c3c;
+  border-left: 8px solid transparent;
+}
+.capStripe2{
+  height: 35px;
+  width: 15px;
+  background-color: #FFFFF0;
+  position: absolute;
+  bottom: 250px;
+  left: 227px;
+  z-index: 3;
+}
+.capStripe3{
+  height: 35px;
+  width: 15px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 250px;
+  left: 242px;
+  z-index: 3;
+}
+.capStripe4{
+  height: 35px;
+  width: 16px;
+  background-color: #FFFFF0;
+  position: absolute;
+  bottom: 250px;
+  left: 257px;
+  z-index: 3;
+}
+.capStripe5{
+  height: 0px;
+  width: 7px;
+  position: absolute;
+  bottom: 250px;
+  left: 273px;
+  z-index: 3;
+  border-top: 35px solid #e74c3c;
+  border-right: 8px solid transparent;
+}
+.capChestStar{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 232px;
+  bottom: 300px;
+  z-index: 3;
+}
+.capChestStar1{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 232px;
+  bottom: 300px;
+  z-index: 3;
+  -moz-transform:    rotate(70deg);
+  -webkit-transform: rotate(70deg);
+  -ms-transform:     rotate(70deg);
+  -o-transform:      rotate(70deg);
+}
+.capChestStar2{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 232px;
+  bottom: 300px;
+  z-index: 3;
+  -moz-transform:    rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  -ms-transform:     rotate(-70deg);
+  -o-transform:      rotate(-70deg);
+}
+.capA{
+  position: absolute;
+  color: #FFFFF0;
+  left: 244px;
+  bottom: 380px;
+  z-index: 3;
+}
+.capRightWing{
+  width: 0px;
+  position: absolute;
+  bottom: 388px;
+  left: 262px;
+  border-bottom: 10px solid #bdc3c7;
+  border-left: 10px solid transparent;
+  z-index: 3;
+  transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  -webkit-transform: rotate(13deg);
+}
+.capLeftWing{
+  width: 0px;
+  position: absolute;
+  bottom: 388px;
+  left: 228px;
+  border-bottom: 10px solid #bdc3c7;
+  border-right: 10px solid transparent;
+  z-index: 3;
+  transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -webkit-transform: rotate(-13deg);
+}
+.capShield{
+  height: 105px;
+  width: 105px;
+  background-color: #FFFFF0;
+  border: 15px solid #e74c3c;
+  position: absolute;
+  bottom: 135px;
+  left: 245px;
+  border-radius: 68px;
+  z-index: 4;
+}
+.capShield1{
+  height: 45px;
+  width: 45px;
+  background-color: #2980b9;
+  border: 15px solid #e74c3c;
+  position: absolute;
+  bottom: 165px;
+  left: 275px;
+  border-radius: 38px;
+  z-index: 4;
+}
+.capShieldStar{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 294px;
+bottom: 197px;
+z-index: 4;
+}
+.capShieldStar1{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 294px;
+bottom: 197px;
+z-index: 4;
+  -moz-transform:    rotate(70deg);
+  -webkit-transform: rotate(70deg);
+  -ms-transform:     rotate(70deg);
+  -o-transform:      rotate(70deg);
+}
+.capShieldStar2{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
+  left: 294px;
+bottom: 197px;
+z-index: 4;
+  -moz-transform:    rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  -ms-transform:     rotate(-70deg);
+  -o-transform:      rotate(-70deg);
+}
+
+
+
+
+
+
+
