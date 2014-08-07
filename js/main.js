@@ -1,4 +1,5 @@
 $(".action").click(function(){
+	$("body").scrollTo(50);
 	$(".action").fadeOut();
 	$(".ironmanHead").animate({left: "230px", bottom: "350px"});
 	$(".ironmanHead").css("visibility", "visible");
@@ -170,12 +171,15 @@ $(".ironmanClear").click(function(){
 })
 
 $(".hulkStart").click(function(){
-	$(".hulkPantsLeft").animate({left: "215px"}, 300)
-	$(".hulkPantsRight").animate({left: "255px"}, 300)
-	$(".hulkPantsTop").animate({left: "215px"}, 300)
-	$(".hulkPantsLeft").css("visibility", "visible");
-	$(".hulkPantsRight").css("visibility", "visible");
-	$(".hulkPantsTop").css("visibility", "visible");
+	$("body").scrollTo(50);
+	setTimeout(function(){
+		$(".hulkPantsLeft").animate({left: "215px"}, 300)
+		$(".hulkPantsRight").animate({left: "255px"}, 300)
+		$(".hulkPantsTop").animate({left: "215px"}, 300)
+		$(".hulkPantsLeft").css("visibility", "visible");
+		$(".hulkPantsRight").css("visibility", "visible");
+		$(".hulkPantsTop").css("visibility", "visible");
+	}, 1000)
 	setTimeout(function(){
 		$(".rightHand").animate({
 			backgroundColor: "#2ecc71",
@@ -211,15 +215,15 @@ $(".hulkStart").click(function(){
 			bottom: "100px",
 			left: "270px",
 			borderRadius: "30px",
-			borderSpacing: -50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: -50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".rightThigh").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".leftThigh").animate({ 
 			backgroundColor: "#2ecc71",
 			width: "75px",  
@@ -227,15 +231,15 @@ $(".hulkStart").click(function(){
 			bottom: "100px",
 			left: "150px",
 			borderRadius: "30px",
-			borderSpacing: 50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: 50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".leftThigh").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".rightShin").animate({
 			backgroundColor: "#2ecc71",
 			width: "60px",  
@@ -294,15 +298,15 @@ $(".hulkStart").click(function(){
 			bottom: "270px",
 			left: "360px",
 			borderRadius: "40px",
-			borderSpacing: -50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000)
+		$({deg: 0}).animate({deg: -50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".rightBicep").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".leftBicep").animate({
 			backgroundColor: "#2ecc71",
 			width: "80px",  
@@ -310,15 +314,15 @@ $(".hulkStart").click(function(){
 			bottom: "270px",
 			left: "60px",
 			borderRadius: "40px",
-			borderSpacing: 50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000)
+		$({deg: 0}).animate({deg: 50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".leftBicep").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".rightForearm").animate({
 			backgroundColor: "#2ecc71",
 			width: "70px",  
@@ -326,15 +330,15 @@ $(".hulkStart").click(function(){
 			bottom: "223px",
 			left: "375px",
 			borderRadius: "35px",
-			borderSpacing: 40,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: 40}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".rightForearm").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".leftForearm").animate({
 			backgroundColor: "#2ecc71",
 			width: "70px",  
@@ -342,15 +346,15 @@ $(".hulkStart").click(function(){
 			bottom: "223px",
 			left: "55px",
 			borderRadius: "35px",
-			borderSpacing: -40,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: -40}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".leftForearm").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 	    $(".rightFoot").animate({
 			borderBottomColor: "#2ecc71",
 			borderLeftColor: "#2ecc71",
@@ -388,15 +392,15 @@ $(".hulkStart").click(function(){
 			bottom: "128px",
 			left: "148px",
 			borderRadius: "0px",
-			borderSpacing: 50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: 50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".hulkPantsLeft").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 		$(".hulkPantsRight").animate({
 			backgroundColor: "#8e44ad",
 			width: "75px",  
@@ -404,22 +408,22 @@ $(".hulkStart").click(function(){
 			bottom: "128px",
 			left: "271px",
 			borderRadius: "0px",
-			borderSpacing: -50,
-		}, {
-	    step: function(now,fx) {
-	      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-	      $(this).css('-moz-transform','rotate('+now+'deg)');
-	      $(this).css('transform','rotate('+now+'deg)');
-	    },
-	    duration: 4000
-		});
+		}, 4000);
+		$({deg: 0}).animate({deg: -50}, {
+        	duration: 4000,
+        	step: function(now) {
+            	$(".hulkPantsRight").css({
+                	transform: 'rotate(' + now + 'deg)'
+        	    });
+        	}
+    	});
 		$(".hulkPantsTop").animate({
 			width: "100px", 
 			bottom: "178px",
 			left: "197px",
 			height: "57px"
 		}, 4000);
-	}, 1000)
+	}, 2000)
 	setTimeout(function(){
 
 
@@ -478,10 +482,13 @@ $(".hulkStart").click(function(){
 			left: "100px",
 		}, 500);
 
-	}, 5500)
+	}, 6500)
 	setTimeout(function(){
 		$(".frame").animate({
 			height: "650px"
+		}, 2000)
+		$(".contain").animate({
+			height: "780px"
 		}, 2000)
 		$(".rightBicep").animate({ 
 			bottom: "350px",
@@ -539,7 +546,7 @@ $(".hulkStart").click(function(){
 			bottom: "575px",
 			left: "111px",
 		}, 2000);
-	}, 6500)
+	}, 7500)
 	setTimeout(function(){
 		$(".rightBicep").animate({ 
 			bottom: "300px",
@@ -561,7 +568,7 @@ $(".hulkStart").click(function(){
 			bottom: "465px",
 			left: "425px",
 		}, 500);
-	}, 9000)
+	}, 10000)
 	setTimeout(function(){
 		$(".frame").animate({
 			width: "625px"
@@ -582,11 +589,14 @@ $(".hulkStart").click(function(){
 			bottom: "351px",
 			left: "550px",
 		}, 2000);
-	}, 10000)
+	}, 12000)
 	setTimeout(function(){
 		$(".frame").animate({
 			height: "500px",
 			width: "500px",
+		}, 2000)
+		$(".contain").animate({
+			height: "630px",
 		}, 2000)
     	$(".rightForearm").animate({ 
 			bottom: "325px",
@@ -643,7 +653,7 @@ $(".hulkStart").click(function(){
 			bottom: "425px",
 			left: "100px",
 		}, 2000);
-	}, 13000)
+	}, 14000)
 	setTimeout(function(){
     	$(".rightForearm").animate({ 
 			bottom: "223px",
@@ -701,7 +711,7 @@ $(".hulkStart").click(function(){
 			bottom: "198px",
 			left: "95px",
 		}, 500);
-	}, 15000)
+	}, 16000)
 	setTimeout(function(){
 		$(".rightHand").animate({
 			backgroundColor: "transparent",
@@ -939,76 +949,79 @@ $(".hulkStart").click(function(){
         	    });
         	}
     	});
-	}, 16000)
+	}, 17000)
 	setTimeout(function(){
 		$(".hulkPantsLeft").animate({left: "540px"}, 300)
 		$(".hulkPantsRight").animate({left: "580px"}, 300)
 		$(".hulkPantsTop").animate({left: "540px"}, 300)
-	}, 21000)
+	}, 22000)
 	setTimeout(function(){
 		$(".hulkPantsLeft").css("visibility", "hidden");
 		$(".hulkPantsRight").css("visibility", "hidden");
 		$(".hulkPantsTop").css("visibility", "hidden");
-	}, 21300)
+	}, 22300)
 })
 
 $(".cyclopsStart").click(function(){
-	$(".cyclopsHead").animate({left: "230px"}, 300);
-	$(".cyclopsHead").css("visibility", "visible");
-	$(".cyclopsNeck").animate({left: "240px"}, 300);
-	$(".cyclopsNeck").css("visibility", "visible");
-	$(".cyclopsRightThigh").animate({left: "255px"}, 300);
-	$(".cyclopsRightThigh").css("visibility", "visible");
-	$(".cyclopsLeftThigh").animate({left: "215px"}, 300);
-	$(".cyclopsLeftThigh").css("visibility", "visible");
-	$(".cyclopsRightShin").animate({left: "255px"}, 300);
-	$(".cyclopsRightShin").css("visibility", "visible");
-	$(".cyclopsLeftShin").animate({left: "215px"}, 300);
-	$(".cyclopsLeftShin").css("visibility", "visible");
-	$(".cyclopsTorso").animate({left: "200px"}, 300);
-	$(".cyclopsTorso").css("visibility", "visible");
-	$(".cyclopsGroin").animate({left: "220px"}, 300);
-	$(".cyclopsGroin").css("visibility", "visible");
-	$(".cyclopsLeftShoulder").animate({left: "190px"}, 300);
-	$(".cyclopsLeftShoulder").css("visibility", "visible");
-	$(".cyclopsRightShoulder").animate({left: "280px"}, 300);
-	$(".cyclopsRightShoulder").css("visibility", "visible");
-	$(".cyclopsLeftBicep").animate({left: "180px"}, 300);
-	$(".cyclopsLeftBicep").css("visibility", "visible");
-	$(".cyclopsRightBicep").animate({left: "295px"}, 300);
-	$(".cyclopsRightBicep").css("visibility", "visible");
-	$(".cyclopsLeftForearm").animate({left: "180px"}, 300);
-	$(".cyclopsLeftForearm").css("visibility", "visible");
-	$(".cyclopsRightForearm").animate({left: "295px"}, 300);
-	$(".cyclopsRightForearm").css("visibility", "visible");
-	$(".cyclopsRightFoot").animate({left: "258px"}, 300);
-	$(".cyclopsRightFoot").css("visibility", "visible");
-	$(".cyclopsLeftFoot").animate({left: "207px"}, 300);
-	$(".cyclopsLeftFoot").css("visibility", "visible");
-	$(".cyclopsRightHand").animate({left: "180px"}, 300);
-	$(".cyclopsRightHand").css("visibility", "visible");
-	$(".cyclopsLeftHand").animate({left: "295px"}, 300);
-	$(".cyclopsLeftHand").css("visibility", "visible");
-	$(".cyclopsBelt").animate({left: "220px"}, 300);
-	$(".cyclopsBelt").css("visibility", "visible");
-	$(".cyclopsBelt1").animate({left: "238px"}, 300);
-	$(".cyclopsBelt1").css("visibility", "visible");
-	$(".cyclopsHead1").css("visibility", "visible");
-	$(".cyclopsVisor").animate({left: "227px"}, 300);
-	$(".cyclopsVisor").css("visibility", "visible");
-	$(".cyclopsVisor1").animate({left: "227px"}, 300);
-	$(".cyclopsVisor1").css("visibility", "visible");
+	$("body").scrollTo(50);
+	setTimeout(function(){
+		$(".cyclopsHead").animate({left: "230px"}, 300);
+		$(".cyclopsHead").css("visibility", "visible");
+		$(".cyclopsNeck").animate({left: "240px"}, 300);
+		$(".cyclopsNeck").css("visibility", "visible");
+		$(".cyclopsRightThigh").animate({left: "255px"}, 300);
+		$(".cyclopsRightThigh").css("visibility", "visible");
+		$(".cyclopsLeftThigh").animate({left: "215px"}, 300);
+		$(".cyclopsLeftThigh").css("visibility", "visible");
+		$(".cyclopsRightShin").animate({left: "255px"}, 300);
+		$(".cyclopsRightShin").css("visibility", "visible");
+		$(".cyclopsLeftShin").animate({left: "215px"}, 300);
+		$(".cyclopsLeftShin").css("visibility", "visible");
+		$(".cyclopsTorso").animate({left: "200px"}, 300);
+		$(".cyclopsTorso").css("visibility", "visible");
+		$(".cyclopsGroin").animate({left: "220px"}, 300);
+		$(".cyclopsGroin").css("visibility", "visible");
+		$(".cyclopsLeftShoulder").animate({left: "190px"}, 300);
+		$(".cyclopsLeftShoulder").css("visibility", "visible");
+		$(".cyclopsRightShoulder").animate({left: "280px"}, 300);
+		$(".cyclopsRightShoulder").css("visibility", "visible");
+		$(".cyclopsLeftBicep").animate({left: "180px"}, 300);
+		$(".cyclopsLeftBicep").css("visibility", "visible");
+		$(".cyclopsRightBicep").animate({left: "295px"}, 300);
+		$(".cyclopsRightBicep").css("visibility", "visible");
+		$(".cyclopsLeftForearm").animate({left: "180px"}, 300);
+		$(".cyclopsLeftForearm").css("visibility", "visible");
+		$(".cyclopsRightForearm").animate({left: "295px"}, 300);
+		$(".cyclopsRightForearm").css("visibility", "visible");
+		$(".cyclopsRightFoot").animate({left: "258px"}, 300);
+		$(".cyclopsRightFoot").css("visibility", "visible");
+		$(".cyclopsLeftFoot").animate({left: "207px"}, 300);
+		$(".cyclopsLeftFoot").css("visibility", "visible");
+		$(".cyclopsRightHand").animate({left: "180px"}, 300);
+		$(".cyclopsRightHand").css("visibility", "visible");
+		$(".cyclopsLeftHand").animate({left: "295px"}, 300);
+		$(".cyclopsLeftHand").css("visibility", "visible");
+		$(".cyclopsBelt").animate({left: "220px"}, 300);
+		$(".cyclopsBelt").css("visibility", "visible");
+		$(".cyclopsBelt1").animate({left: "238px"}, 300);
+		$(".cyclopsBelt1").css("visibility", "visible");
+		$(".cyclopsHead1").css("visibility", "visible");
+		$(".cyclopsVisor").animate({left: "227px"}, 300);
+		$(".cyclopsVisor").css("visibility", "visible");
+		$(".cyclopsVisor1").animate({left: "227px"}, 300);
+		$(".cyclopsVisor1").css("visibility", "visible");	
+	}, 1000)
 	setTimeout(function(){
 		$(".leftForearm").css("visibility", "hidden");
 		$(".leftBicep").css("visibility", "hidden");
 		$(".rightHand").css("visibility", "hidden");
 		$(".torso").css("visibility", "hidden");
-	}, 400)
+	}, 1400)
 	setTimeout(function(){
 		$(".cyclopsVisor").animate({left: "256px", width: "16px"});
 		$(".cyclopsVisor1").animate({left: "262px", width: "10px"});
 		$(".cyclopsHead1").animate({left: "259px", width: "11px"});
-	}, 1000)
+	}, 2000)
 	setTimeout(function(){
 		$(".cyclopsRightHand").animate({left: "245px", bottom: "260px"}, 250);
 		$(".cyclopsLeftForearm").animate({left: "234px", bottom: "246px"}, 500);
@@ -1040,7 +1053,7 @@ $(".cyclopsStart").click(function(){
         	    });
         	}
     	});
-	}, 2000)
+	}, 3000)
 	setTimeout(function(){
 		$(".cyclopsRightHand").animate({left: "242px", bottom: "304px"}, 250);
 		$({deg: -87}).animate({deg: -175}, {
@@ -1052,18 +1065,18 @@ $(".cyclopsStart").click(function(){
         	    });
         	}
     	});
-	}, 2250)
+	}, 3250)
 	setTimeout(function(){
 		$(".cyclopsBeam").css("visibility", "visible");
 		$(".cyclopsBeam").animate({width: "234px"}, 300)
-	}, 2500)
+	}, 3500)
 	setTimeout(function(){
 		$(".cyclopsBeam").animate({width: "6px", left: "500px"}, 300)
-	}, 3500)
+	}, 4500)
 	setTimeout(function(){
 		$(".cyclopsBeam").css("visibility", "hidden");
 		$(".cyclopsBeam").animate({left: "267px"});
-	}, 3800)
+	}, 4800)
 	setTimeout(function(){
 		$(".cyclopsVisor").animate({left: "227px", width: "46px"});
 		$(".cyclopsVisor1").animate({left: "227px", width: "46px"});
@@ -1072,12 +1085,12 @@ $(".cyclopsStart").click(function(){
 		$(".cyclopsLeftForearm").animate({left: "204px"});
 		$(".cyclopsLeftBicep").animate({bottom: "280px", height: "30px"});
 		$(".cyclopsLeftBicep").css({"z-index": "1"});
-	}, 4500)
+	}, 5500)
 	setTimeout(function(){
 		$(".cyclopsBeam1").css("visibility", "visible");
 		$(".cyclopsBeam1").css("display", "block");
 		$(".cyclopsBeam1").animate({height: "500px", width: "500px", bottom: "0px", left: "0px", borderRadius: "0px", opacity: "1"}, 300);
-	}, 5000)
+	}, 6000)
 	setTimeout(function(){
 		$(".cyclopsHead").animate({left: "590px"}, 100);
 		$(".cyclopsHead").css("visibility", "hidden");
@@ -1151,76 +1164,79 @@ $(".cyclopsStart").click(function(){
 		$(".cyclopsVisor").css("visibility", "hidden");
 		$(".cyclopsVisor1").animate({left: "587px"}, 100);
 		$(".cyclopsVisor1").css("visibility", "hidden");
-	}, 5400)
+	}, 6400)
 	setTimeout(function(){
 		$(".leftForearm").css("visibility", "visible");
 		$(".leftBicep").css("visibility", "visible");
 		$(".rightHand").css("visibility", "visible");
 		$(".torso").css("visibility", "visible");
 		$(".cyclopsBeam1").animate({height: "6px", width: "46px", bottom: "375px", left: "227px", borderRadius: "18px", opacity: ".8"}, 300);
-	}, 6000)
-	setTimeout(function(){
-		$(".cyclopsBeam1").fadeOut();
 	}, 7000)
 	setTimeout(function(){
+		$(".cyclopsBeam1").fadeOut();
+	}, 8000)
+	setTimeout(function(){
 		$(".cyclopsBeam1").css("visibility", "hidden")
-	}, 7400)
+	}, 8400)
 })
 
 $(".wolverineStart").click(function(){
-	$(".wolverineHead").animate({left: "230px"}, 300);
-	$(".wolverineHead").css("visibility", "visible");
-	$(".wolverineNeck").animate({left: "240px"}, 300);
-	$(".wolverineNeck").css("visibility", "visible");
-	$(".wolverineRightThigh").animate({left: "255px"}, 300);
-	$(".wolverineRightThigh").css("visibility", "visible");
-	$(".wolverineLeftThigh").animate({left: "215px"}, 300);
-	$(".wolverineLeftThigh").css("visibility", "visible");
-	$(".wolverineRightShin").animate({left: "255px"}, 300);
-	$(".wolverineRightShin").css("visibility", "visible");
-	$(".wolverineLeftShin").animate({left: "215px"}, 300);
-	$(".wolverineLeftShin").css("visibility", "visible");
-	$(".wolverineTorso").animate({left: "200px"}, 300);
-	$(".wolverineTorso").css("visibility", "visible");
-	$(".wolverineGroin").animate({left: "220px"}, 300);
-	$(".wolverineGroin").css("visibility", "visible");
-	$(".wolverineLeftShoulder").animate({left: "190px"}, 300);
-	$(".wolverineLeftShoulder").css("visibility", "visible");
-	$(".wolverineRightShoulder").animate({left: "280px"}, 300);
-	$(".wolverineRightShoulder").css("visibility", "visible");
-	$(".wolverineLeftBicep").animate({left: "180px"}, 300);
-	$(".wolverineLeftBicep").css("visibility", "visible");
-	$(".wolverineRightBicep").animate({left: "295px"}, 300);
-	$(".wolverineRightBicep").css("visibility", "visible");
-	$(".wolverineLeftForearm").animate({left: "180px"}, 300);
-	$(".wolverineLeftForearm").css("visibility", "visible");
-	$(".wolverineRightForearm").animate({left: "295px"}, 300);
-	$(".wolverineRightForearm").css("visibility", "visible");
-	$(".wolverineRightFoot").animate({left: "258px"}, 300);
-	$(".wolverineRightFoot").css("visibility", "visible");
-	$(".wolverineLeftFoot").animate({left: "207px"}, 300);
-	$(".wolverineLeftFoot").css("visibility", "visible");
-	$(".wolverineRightHand").animate({left: "180px"}, 300);
-	$(".wolverineRightHand").css("visibility", "visible");
-	$(".wolverineLeftHand").animate({left: "295px"}, 300);
-	$(".wolverineLeftHand").css("visibility", "visible");
-	$(".wolverineBelt").animate({left: "220px"}, 300);
-	$(".wolverineBelt").css("visibility", "visible");
-	$(".wolverineBelt1").animate({left: "237px"}, 300);
-	$(".wolverineBelt1").css("visibility", "visible");
-	$(".wolverineHead1").css("visibility", "visible");
-	$(".wolverineHead2").animate({left: "230px"}, 300);
-	$(".wolverineHead2").css("visibility", "visible");
-	$(".wolverineRightEye").animate({left: "252px"}, 300);
-	$(".wolverineRightEye").css("visibility", "visible");
-	$(".wolverineLeftEye").animate({left: "230px"}, 300);
-	$(".wolverineLeftEye").css("visibility", "visible");
-	$(".wolverineRightHorn").animate({left: "255px"}, 300);
-	$(".wolverineRightHorn").css("visibility", "visible");
-	$(".wolverineLeftHorn").animate({left: "227px"}, 300);
-	$(".wolverineLeftHorn").css("visibility", "visible");
-	$(".wolverineTorso1").animate({left: "200px"}, 300);
-	$(".wolverineTorso1").css("visibility", "visible");
+	$("body").scrollTo(50);
+	setTimeout(function	(){
+		$(".wolverineHead").animate({left: "230px"}, 300);
+		$(".wolverineHead").css("visibility", "visible");
+		$(".wolverineNeck").animate({left: "240px"}, 300);
+		$(".wolverineNeck").css("visibility", "visible");
+		$(".wolverineRightThigh").animate({left: "255px"}, 300);
+		$(".wolverineRightThigh").css("visibility", "visible");
+		$(".wolverineLeftThigh").animate({left: "215px"}, 300);
+		$(".wolverineLeftThigh").css("visibility", "visible");
+		$(".wolverineRightShin").animate({left: "255px"}, 300);
+		$(".wolverineRightShin").css("visibility", "visible");
+		$(".wolverineLeftShin").animate({left: "215px"}, 300);
+		$(".wolverineLeftShin").css("visibility", "visible");
+		$(".wolverineTorso").animate({left: "200px"}, 300);
+		$(".wolverineTorso").css("visibility", "visible");
+		$(".wolverineGroin").animate({left: "220px"}, 300);
+		$(".wolverineGroin").css("visibility", "visible");
+		$(".wolverineLeftShoulder").animate({left: "190px"}, 300);
+		$(".wolverineLeftShoulder").css("visibility", "visible");
+		$(".wolverineRightShoulder").animate({left: "280px"}, 300);
+		$(".wolverineRightShoulder").css("visibility", "visible");
+		$(".wolverineLeftBicep").animate({left: "180px"}, 300);
+		$(".wolverineLeftBicep").css("visibility", "visible");
+		$(".wolverineRightBicep").animate({left: "295px"}, 300);
+		$(".wolverineRightBicep").css("visibility", "visible");
+		$(".wolverineLeftForearm").animate({left: "180px"}, 300);
+		$(".wolverineLeftForearm").css("visibility", "visible");
+		$(".wolverineRightForearm").animate({left: "295px"}, 300);
+		$(".wolverineRightForearm").css("visibility", "visible");
+		$(".wolverineRightFoot").animate({left: "258px"}, 300);
+		$(".wolverineRightFoot").css("visibility", "visible");
+		$(".wolverineLeftFoot").animate({left: "207px"}, 300);
+		$(".wolverineLeftFoot").css("visibility", "visible");
+		$(".wolverineRightHand").animate({left: "180px"}, 300);
+		$(".wolverineRightHand").css("visibility", "visible");
+		$(".wolverineLeftHand").animate({left: "295px"}, 300);
+		$(".wolverineLeftHand").css("visibility", "visible");
+		$(".wolverineBelt").animate({left: "220px"}, 300);
+		$(".wolverineBelt").css("visibility", "visible");
+		$(".wolverineBelt1").animate({left: "237px"}, 300);
+		$(".wolverineBelt1").css("visibility", "visible");
+		$(".wolverineHead1").css("visibility", "visible");
+		$(".wolverineHead2").animate({left: "230px"}, 300);
+		$(".wolverineHead2").css("visibility", "visible");
+		$(".wolverineRightEye").animate({left: "252px"}, 300);
+		$(".wolverineRightEye").css("visibility", "visible");
+		$(".wolverineLeftEye").animate({left: "230px"}, 300);
+		$(".wolverineLeftEye").css("visibility", "visible");
+		$(".wolverineRightHorn").animate({left: "255px"}, 300);
+		$(".wolverineRightHorn").css("visibility", "visible");
+		$(".wolverineLeftHorn").animate({left: "227px"}, 300);
+		$(".wolverineLeftHorn").css("visibility", "visible");
+		$(".wolverineTorso1").animate({left: "200px"}, 300);
+		$(".wolverineTorso1").css("visibility", "visible");
+	}, 1000)
 	setTimeout(function(){
 		$(".rightFoot").css("visibility", "hidden");
 		$(".leftFoot").css("visibility", "hidden");
@@ -1238,7 +1254,7 @@ $(".wolverineStart").click(function(){
 		$(".rightForearm").css("visibility", "hidden");
 		$(".rightHand").css("visibility", "hidden");
 		$(".leftHand").css("visibility", "hidden");
-	},400)
+	},1400)
 	setTimeout(function(){
 		$(".wolverineRightFoot").animate({left: "308px"}, 500)
 		$(".wolverineLeftFoot").animate({left: "157px"}, 500)
@@ -1331,14 +1347,13 @@ $(".wolverineStart").click(function(){
         	    });
         	}
     	});
-
-	},1000)
+	},2000)
 	setTimeout(function(){
 		$(".wolverineRightClaws").css("visibility", "visible");
 		$(".wolverineLeftClaws").css("visibility", "visible");
 		$(".wolverineRightClaws").animate({left: "353px", top: "331px"}, 100);
 		$(".wolverineLeftClaws").animate({left: "120px", top: "331px"}, 100);
-	}, 2000)
+	}, 3000)
 	setTimeout(function(){
 		$(".rightBicep").animate({height: "70px", bottom: "200px", left: "295px"}, 500)
 		$(".leftBicep").animate({height: "70px", bottom: "200px", left: "180px"}, 500)
@@ -1412,11 +1427,11 @@ $(".wolverineStart").click(function(){
         	    });
         	}
     	});
-	}, 3000)
+	}, 4000)
 	setTimeout(function(){
 		$(".wolverineLeftClaws").animate({top: "243px", left: "215px"}, 100)
 		$(".wolverineRightClaws").animate({top: "243px", left: "253px"}, 100)
-	}, 4000)
+	}, 5000)
 	setTimeout(function(){
 		$(".wolverineLeftClaws").css("visibility", "hidden")
 		$(".wolverineRightClaws").css("visibility", "hidden")
@@ -1438,7 +1453,7 @@ $(".wolverineStart").click(function(){
         	    });
         	}
     	});
-	}, 4200)
+	}, 5200)
 	setTimeout(function(){
 		$(".wolverineHead").animate({bottom: "350px"}, 500);
 		$(".wolverineNeck").animate({bottom: "335px"}, 500);
@@ -1515,7 +1530,7 @@ $(".wolverineStart").click(function(){
         	    });
         	}
     	});
-	}, 5000)
+	}, 6000)
 	setTimeout(function(){
 		$(".rightFoot").css("visibility", "visible");
 		$(".leftFoot").css("visibility", "visible");
@@ -1559,7 +1574,7 @@ $(".wolverineStart").click(function(){
 		$(".wolverineRightHorn").animate({left: "615px"}, 300);
 		$(".wolverineLeftHorn").animate({left: "587px"}, 300);
 		$(".wolverineTorso1").animate({left: "560px"}, 300);
-	}, 6000)
+	}, 7000)
 	setTimeout(function(){
 		$(".wolverineHead").css("visibility", "hidden");
 		$(".wolverineNeck").css("visibility", "hidden");
@@ -1588,75 +1603,90 @@ $(".wolverineStart").click(function(){
 		$(".wolverineRightHorn").css("visibility", "hidden");
 		$(".wolverineLeftHorn").css("visibility", "hidden");
 		$(".wolverineTorso1").css("visibility", "hidden");
-	}, 6400)
+	}, 7400)
 })
 
 $(".thorStart").click(function(){
-	$(".thorRightThigh").css("visibility", "visible");
-	$(".thorLeftThigh").css("visibility", "visible");
-	$(".thorRightShin").css("visibility", "visible");
-	$(".thorLeftShin").css("visibility", "visible");
-	$(".thorTorso").css("visibility", "visible");
-	$(".thorGroin").css("visibility", "visible");
-	$(".thorLeftShoulder").css("visibility", "visible");
-	$(".thorRightShoulder").css("visibility", "visible");
-	$(".thorLeftFoot").css("visibility", "visible");
-	$(".thorRightFoot").css("visibility", "visible");
-	$(".thorBelt").css("visibility", "visible");
-	$(".thorHead1").css("visibility", "visible");
-	$(".thorRightWing").css("visibility", "visible");
-	$(".thorLeftWing").css("visibility", "visible");
-	$(".thorLeftHair").css("visibility", "visible");
-	$(".thorRightHair").css("visibility", "visible");
-	$(".thorRightCircleTop").css("visibility", "visible");
-	$(".thorRightCircleMiddle").css("visibility", "visible");
-	$(".thorRightCircleBottom").css("visibility", "visible");
-	$(".thorLeftCircleTop").css("visibility", "visible");
-	$(".thorLeftCircleMiddle").css("visibility", "visible");
-	$(".thorLeftCircleBottom").css("visibility", "visible");
-	$(".thorRightWristBand").css("visibility", "visible");
-	$(".thorRightWristBand1").css("visibility", "visible");
-	$(".thorLeftWristBand").css("visibility", "visible");
-	$(".thorLeftWristBand1").css("visibility", "visible");
-	$(".thorLeftKnee").css("visibility", "visible");
-	$(".thorRightKnee").css("visibility", "visible");
-	$(".thorCape").css("visibility", "visible");
-	$(".thorRightThigh").animate({left: "255px"}, 300);
-	$(".thorLeftThigh").animate({left: "215px"}, 300);
-	$(".thorRightShin").animate({left: "255px"}, 300);
-	$(".thorLeftShin").animate({left: "215px"}, 300);
-	$(".thorTorso").animate({left: "200px"}, 300);
-	$(".thorGroin").animate({left: "220px"}, 300);
-	$(".thorLeftShoulder").animate({left: "190px"}, 300);
-	$(".thorRightShoulder").animate({left: "280px"}, 300);
-	$(".thorLeftFoot").animate({left: "207px"}, 300);
-	$(".thorRightFoot").animate({left: "258px"}, 300);
-	$(".thorBelt").animate({left: "220px"}, 300);
-	$(".thorHead1").animate({left: "230px"}, 300);
-	$(".thorRightWing").animate({left: "262px"}, 300);
-	$(".thorLeftWing").animate({left: "228px"}, 300);
-	$(".thorLeftHair").animate({left: "229px"}, 300);
-	$(".thorRightHair").animate({left: "254px"}, 300);
-	$(".thorRightCircleTop").animate({left: "259px"}, 300);
-	$(".thorRightCircleMiddle").animate({left: "255px"}, 300);
-	$(".thorRightCircleBottom").animate({left: "253px"}, 300);
-	$(".thorLeftCircleTop").animate({left: "223px"}, 300);
-	$(".thorLeftCircleMiddle").animate({left: "227px"}, 300);
-	$(".thorLeftCircleBottom").animate({left: "230px"}, 300);
-	$(".thorRightWristBand").animate({left: "295px"}, 300);
-	$(".thorRightWristBand1").animate({left: "295px"}, 300);
-	$(".thorLeftWristBand").animate({left: "180px"}, 300);
-	$(".thorLeftWristBand1").animate({left: "180px"}, 300);
-	$(".thorLeftKnee").animate({left: "250px"}, 300);
-	$(".thorRightKnee").animate({left: "210px"}, 300);
-	$(".thorCape").animate({left: "175px"}, 300);
+	$("body").scrollTo(50);
+	setTimeout(function(){
+		$(".thorRightThigh").css("visibility", "visible");
+		$(".thorLeftThigh").css("visibility", "visible");
+		$(".thorRightShin").css("visibility", "visible");
+		$(".thorLeftShin").css("visibility", "visible");
+		$(".thorTorso").css("visibility", "visible");
+		$(".thorGroin").css("visibility", "visible");
+		$(".thorLeftShoulder").css("visibility", "visible");
+		$(".thorRightShoulder").css("visibility", "visible");
+		$(".thorLeftFoot").css("visibility", "visible");
+		$(".thorRightFoot").css("visibility", "visible");
+		$(".thorBelt").css("visibility", "visible");
+		$(".thorHead1").css("visibility", "visible");
+		$(".thorRightWing").css("visibility", "visible");
+		$(".thorLeftWing").css("visibility", "visible");
+		$(".thorLeftHair").css("visibility", "visible");
+		$(".thorRightHair").css("visibility", "visible");
+		$(".thorRightCircleTop").css("visibility", "visible");
+		$(".thorRightCircleMiddle").css("visibility", "visible");
+		$(".thorRightCircleBottom").css("visibility", "visible");
+		$(".thorLeftCircleTop").css("visibility", "visible");
+		$(".thorLeftCircleMiddle").css("visibility", "visible");
+		$(".thorLeftCircleBottom").css("visibility", "visible");
+		$(".thorRightWristBand").css("visibility", "visible");
+		$(".thorRightWristBand1").css("visibility", "visible");
+		$(".thorLeftWristBand").css("visibility", "visible");
+		$(".thorLeftWristBand1").css("visibility", "visible");
+		$(".thorLeftKnee").css("visibility", "visible");
+		$(".thorRightKnee").css("visibility", "visible");
+		$(".thorCape").css("visibility", "visible");
+		$(".thorRightThigh").animate({left: "255px"}, 300);
+		$(".thorLeftThigh").animate({left: "215px"}, 300);
+		$(".thorRightShin").animate({left: "255px"}, 300);
+		$(".thorLeftShin").animate({left: "215px"}, 300);
+		$(".thorTorso").animate({left: "200px"}, 300);
+		$(".thorGroin").animate({left: "220px"}, 300);
+		$(".thorLeftShoulder").animate({left: "190px"}, 300);
+		$(".thorRightShoulder").animate({left: "280px"}, 300);
+		$(".thorLeftFoot").animate({left: "207px"}, 300);
+		$(".thorRightFoot").animate({left: "258px"}, 300);
+		$(".thorBelt").animate({left: "220px"}, 300);
+		$(".thorHead1").animate({left: "230px"}, 300);
+		$(".thorRightWing").animate({left: "262px"}, 300);
+		$(".thorLeftWing").animate({left: "228px"}, 300);
+		$(".thorLeftHair").animate({left: "229px"}, 300);
+		$(".thorRightHair").animate({left: "254px"}, 300);
+		$(".thorRightCircleTop").animate({left: "259px"}, 300);
+		$(".thorRightCircleMiddle").animate({left: "255px"}, 300);
+		$(".thorRightCircleBottom").animate({left: "253px"}, 300);
+		$(".thorLeftCircleTop").animate({left: "223px"}, 300);
+		$(".thorLeftCircleMiddle").animate({left: "227px"}, 300);
+		$(".thorLeftCircleBottom").animate({left: "230px"}, 300);
+		$(".thorRightWristBand").animate({left: "295px"}, 300);
+		$(".thorRightWristBand1").animate({left: "295px"}, 300);
+		$(".thorLeftWristBand").animate({left: "180px"}, 300);
+		$(".thorLeftWristBand1").animate({left: "180px"}, 300);
+		$(".thorLeftKnee").animate({left: "250px"}, 300);
+		$(".thorRightKnee").animate({left: "210px"}, 300);
+		$(".thorCape").animate({left: "175px"}, 300);	
+	}, 1000)	
+	setTimeout(function(){
+		$(".torso").css("visibility", "hidden");
+		$(".leftShoulder").css("visibility", "hidden");
+		$(".rightShoulder").css("visibility", "hidden");
+		$(".groin").css("visibility", "hidden");
+		$(".leftFoot").css("visibility", "hidden");
+		$(".rightFoot").css("visibility", "hidden");
+		$(".leftShin").css("visibility", "hidden");
+		$(".rightShin").css("visibility", "hidden");
+		$(".leftThigh").css("visibility", "hidden");
+		$(".rightThigh").css("visibility", "hidden");	
+	}, 1400)
 	setTimeout(function(){
 		$(".rightBicep").animate({bottom: "320px"}, 500)
 		$(".rightForearm").animate({bottom: "380px"}, 500)
 		$(".leftHand").animate({bottom: "420px"}, 500)
 		$(".thorRightWristBand").animate({bottom: "402px"}, 500)
 		$(".thorRightWristBand1").animate({bottom: "410px"}, 500)
-	}, 1000)
+	}, 2000)
 	setTimeout(function(){
 		$(".rightBicep").animate({bottom: "315px", left: "310px"}, 500)
 		$(".rightForearm").animate({bottom: "370px", left: "338px"}, 500)
@@ -1683,7 +1713,7 @@ $(".thorStart").click(function(){
 	    	    });
 	    	}
 	    });
-	}, 1500)
+	}, 2500)
 	setTimeout(function(){
 		$(".frame").animate({
 			backgroundColor: "#474546",
@@ -1694,10 +1724,171 @@ $(".thorStart").click(function(){
 		setTimeout(function(){
 			$(".frame").css("background-color", "#474546")
 		},2000)
-	}, 2000)
+	}, 3000)
+	setTimeout(function(){
+		$(".thorHammer1").css("visibility", "visible");
+		$(".thorHammer").css("visibility", "visible");
+		$(".thorHammer1").animate({
+			left: "313px"
+		}, 200)
+		$(".thorHammer").animate({
+			left: "350px"
+		}, 200)
+		setTimeout(function(){
+			$(".frame").css({"backgroundColor": "#00FFFF"})
+		},600)
+		setTimeout(function(){
+			$(".frame").css("background-color", "#474546")
+		},700)
+	}, 5000)
+	setTimeout(function(){
+		$(".thorRightThigh").animate({left: "355px", bottom: "690px",}, 500);
+		$(".thorLeftThigh").animate({left: "315px", bottom: "690px",}, 500);
+		$(".thorRightShin").animate({left: "355px", bottom: "610px",}, 500);
+		$(".thorLeftShin").animate({left: "315px", bottom: "610px",}, 500);
+		$(".thorTorso").animate({left: "300px", bottom: "840px",}, 500);
+		$(".thorGroin").animate({left: "320px", bottom: "790px",}, 500);
+		$(".thorLeftShoulder").animate({left: "290px", bottom: "895px",}, 500);
+		$(".thorRightShoulder").animate({left: "380px", bottom: "895px",}, 500);
+		$(".thorLeftFoot").animate({left: "307px", bottom: "590px",}, 500);
+		$(".thorRightFoot").animate({left: "358px", bottom: "590px",}, 500);
+		$(".thorBelt").animate({left: "320px", bottom: "825px",}, 500);
+		$(".thorHead1").animate({left: "330px", bottom: "967px",}, 500);
+		$(".thorRightWing").animate({left: "362px", bottom: "978px",}, 500);
+		$(".thorLeftWing").animate({left: "328px", bottom: "978px",}, 500);
+		$(".thorLeftHair").animate({left: "329px", bottom: "907px",}, 500);
+		$(".thorRightHair").animate({left: "354px", bottom: "907px",}, 500);
+		$(".thorRightCircleTop").animate({left: "359px", bottom: "895px",}, 500);
+		$(".thorRightCircleMiddle").animate({left: "355px", bottom: "858px",}, 500);
+		$(".thorRightCircleBottom").animate({left: "353px", bottom: "802px",}, 500);
+		$(".thorLeftCircleTop").animate({left: "323px", bottom: "895px",}, 500);
+		$(".thorLeftCircleMiddle").animate({left: "327px", bottom: "858px",}, 500);
+		$(".thorLeftCircleBottom").animate({left: "330px", bottom: "802px",}, 500);
+		$(".thorRightWristBand").animate({bottom: "982px", left: "441px"}, 500)
+		$(".thorRightWristBand1").animate({bottom: "990px", left: "441px"}, 500)
+		$(".thorLeftWristBand").animate({left: "280px", bottom: "803px",}, 500);
+		$(".thorLeftWristBand1").animate({left: "280px", bottom: "811px",}, 500);
+		$(".thorLeftKnee").animate({left: "350px", bottom: "690px",}, 500);
+		$(".thorRightKnee").animate({left: "310px", bottom: "690px",}, 500);
+		$(".thorCape").animate({left: "275px", bottom: "590px",}, 500);
+		$(".thorHammer").animate({left: "450px", bottom: "990px"}, 500);
+		$(".thorHammer1").animate({left: "413px", bottom: "1017px"}, 500);
+		$(".rightBicep").animate({left: "413px", bottom: "1017px"}, 500);
+		$(".leftBicep").animate({left: "280px", bottom: "840px"}, 500);
+		$(".leftForearm").animate({left: "413px", bottom: "795px"}, 500);
+		$(".rightForearm").animate({left: "413px", bottom: "1017px"}, 500);
+		$(".leftHand").animate({left: "413px", bottom: "1017px"}, 500);
+		$(".rightHand").animate({left: "280px", bottom: "770px"}, 500);
+		$(".neck").animate({left: "340px", bottom: "925px"}, 500);
+		$(".head").animate({left: "330px", bottom: "940px"}, 500);
+	}, 6000)
+	setTimeout(function(){
+		$(".torso").css("visibility", "visible");
+		$(".leftShoulder").css("visibility", "visible");
+		$(".rightShoulder").css("visibility", "visible");
+		$(".groin").css("visibility", "visible");
+		$(".leftFoot").css("visibility", "visible");
+		$(".rightFoot").css("visibility", "visible");
+		$(".leftShin").css("visibility", "visible");
+		$(".rightShin").css("visibility", "visible");
+		$(".leftThigh").css("visibility", "visible");
+		$(".rightThigh").css("visibility", "visible");
+		$(".leftBicep").css({
+			visibility : "visible",
+			left: "180px",
+			bottom: "250px",
+		});
+		$(".leftForearm").css({
+			visibility : "visible",
+			left: "180px",
+			bottom: "205px",
+		});
+		$(".rightHand").css({
+			visibility : "visible",
+			left: "180px",
+			bottom: "180px",
+		});
+		$(".neck").css({
+			visibility : "visible",
+			left: "240px",
+			bottom: "335px",
+		});
+		$(".head").css({
+			visibility : "visible",
+			left: "230px",
+			bottom: "350px",
+		});
+		$(".rightBicep").css({
+			visibility : "visible",
+			left: "295px",
+			bottom: "250px",
+		});
+		$(".rightForearm").css({
+			visibility : "visible",
+			left: "295px",
+			bottom: "205px",
+		});
+		$(".leftHand").css({
+			visibility : "visible",
+			left: "295px",
+			bottom: "180px",
+		});
+		$(".rightBicep").css({
+        	transform: 'rotate(0deg)'
+	    });
+	    $(".rightForearm").css({
+        	transform: 'rotate(0deg)'
+	    });
+	    $(".leftHand").css({
+        	transform: 'rotate(0deg)'
+	    });
+	    $(".thorRightWristBand").css({
+        	transform: 'rotate(0deg)'
+	    });
+	    $(".thorRightWristBand1").css({
+        	transform: 'rotate(0deg)'
+	    });
+	    $(".thorRightThigh").css({left: "615px", bottom: "100px", visibility: "hidden"});
+		$(".thorLeftThigh").css({left: "575px", bottom: "100px", visibility: "hidden"});
+		$(".thorRightShin").css({left: "615px", bottom: "20px", visibility: "hidden"});
+		$(".thorLeftShin").css({left: "575px", bottom: "20px", visibility: "hidden"});
+		$(".thorTorso").css({left: "560px", bottom: "250px", visibility: "hidden"});
+		$(".thorGroin").css({left: "580px", bottom: "200px", visibility: "hidden"});
+		$(".thorLeftShoulder").css({left: "550px", bottom: "305px", visibility: "hidden"});
+		$(".thorRightShoulder").css({left: "640px", bottom: "305px", visibility: "hidden"});
+		$(".thorLeftFoot").css({left: "567px", bottom: "0px", visibility: "hidden"});
+		$(".thorRightFoot").css({left: "618px", bottom: "0px", visibility: "hidden"});
+		$(".thorBelt").css({left: "580px", bottom: "235px", visibility: "hidden"});
+		$(".thorHead1").css({left: "590px", bottom: "377px", visibility: "hidden"});
+		$(".thorRightWing").css({left: "622px", bottom: "388px", visibility: "hidden"});
+		$(".thorLeftWing").css({left: "588px", bottom: "388px", visibility: "hidden"});
+		$(".thorLeftHair").css({left: "590px", bottom: "317px", visibility: "hidden"});
+		$(".thorRightHair").css({left: "614px", bottom: "317px", visibility: "hidden"});
+		$(".thorRightCircleTop").css({left: "619px", bottom: "305px", visibility: "hidden"});
+		$(".thorRightCircleMiddle").css({left: "615px", bottom: "268px", visibility: "hidden"});
+		$(".thorRightCircleBottom").css({left: "613px", bottom: "212px", visibility: "hidden"});
+		$(".thorLeftCircleTop").css({left: "583px", bottom: "305px", visibility: "hidden"});
+		$(".thorLeftCircleMiddle").css({left: "587px", bottom: "268px", visibility: "hidden"});
+		$(".thorLeftCircleBottom").css({left: "590px", bottom: "212px", visibility: "hidden"});
+		$(".thorRightWristBand").css({bottom: "213px", left: "655px", visibility: "hidden"})
+		$(".thorRightWristBand1").css({bottom: "221px", left: "655px", visibility: "hidden"})
+		$(".thorLeftWristBand").css({left: "540px", bottom: "213px", visibility: "hidden"});
+		$(".thorLeftWristBand1").css({left: "540px", bottom: "221px", visibility: "hidden"});
+		$(".thorLeftKnee").css({left: "610px", bottom: "100px", visibility: "hidden"});
+		$(".thorRightKnee").css({left: "570px", bottom: "100px", visibility: "hidden"});
+		$(".thorCape").css({left: "535px", bottom: "0px", visibility: "hidden"});
+		$(".thorHammer").css({left: "592px", bottom: "400px", visibility: "hidden"});
+		$(".thorHammer1").css({left: "555px", bottom: "427px", visibility: "hidden"});
+		$(".frame").css({"backgroundColor": "#00FFFF"})
+		$(".frame").animate({
+			backgroundColor: "#ecf0f1",
+		}, 1000)
+	}, 7000)
 })
 
+$(".capStart").click(function(){
 
+})
 
 
 

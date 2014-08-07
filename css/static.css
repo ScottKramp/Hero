@@ -5,22 +5,28 @@ body{
   width:580px;
 	margin-left: auto;
 	margin-right: auto;
+  height: 630px;
 }
 .ironmanClear{
   display: none;
-}
-.hulkStart{
-  /*display: none;*/
 }
 .frame{
   width:500px;
   height: 500px;
   background-color: #ecf0f1;
-  position: fixed;
+  position: absolute;
   top:50px;
   border-style: solid;
   border-width: 40px;
   border-color: #f1c40f;
+  z-index: -2;
+}
+.buttonBox{
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  height: 400px;
 }
 .head{
   height: 50px;
@@ -1404,11 +1410,25 @@ body{
   background-color: #A0522D;
   position: absolute;
   bottom: 400px;
-  left: 350px;
+  left: 592px;
   transform: rotate(-60deg);
   -ms-transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
   z-index: 1;
+  visibility: hidden;
+}
+.thorHammer1{
+  height: 70px;
+  width: 40px;
+  background-color: #95a5a6;
+  position: absolute;
+  bottom: 427px;
+  left: 555px;
+  transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(30deg);
+  z-index: 1;
+  visibility: hidden;
 }
 .capHead{
   height: 50px;
@@ -1684,33 +1704,34 @@ body{
 }
 .capChestStar{
   position: absolute;
-  border-right:  18px solid transparent;
-  border-top: 12.5px  solid #FFFFF0;
-  border-left:   18px solid transparent;
   left: 232px;
-  bottom: 300px;
-  z-index: 3;
+  bottom: 280px;
+  height: 36px;
+  width: 36px;
 }
 .capChestStar1{
-  position: absolute;
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  left: 232px;
-  bottom: 300px;
+  z-index: 3;
+  position: absolute;
+}
+.capChestStar2{
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
   z-index: 3;
   -moz-transform:    rotate(70deg);
   -webkit-transform: rotate(70deg);
   -ms-transform:     rotate(70deg);
   -o-transform:      rotate(70deg);
+  position: absolute;
 }
-.capChestStar2{
+.capChestStar3{
   position: absolute;
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  left: 232px;
-  bottom: 300px;
   z-index: 3;
   -moz-transform:    rotate(-70deg);
   -webkit-transform: rotate(-70deg);
@@ -1749,57 +1770,61 @@ body{
   -webkit-transform: rotate(-13deg);
 }
 .capShield{
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  bottom: 130px;
+  left: 250px;
+}
+.capShield1{
   height: 105px;
   width: 105px;
   background-color: #FFFFF0;
   border: 15px solid #e74c3c;
   position: absolute;
-  bottom: 135px;
-  left: 245px;
   border-radius: 68px;
   z-index: 4;
 }
-.capShield1{
+.capShield2{
   height: 45px;
   width: 45px;
   background-color: #2980b9;
   border: 15px solid #e74c3c;
   position: absolute;
-  bottom: 165px;
-  left: 275px;
   border-radius: 38px;
   z-index: 4;
+  left: 30px;
+  bottom: 30px;
 }
 .capShieldStar{
-  position: absolute;
-  border-right:  18px solid transparent;
-  border-top: 12.5px  solid #FFFFF0;
-  border-left:   18px solid transparent;
-  left: 294px;
-bottom: 197px;
-z-index: 4;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  z-index: 4;
+  margin-left: 50px;
+  margin-top: 60px;
 }
 .capShieldStar1{
   position: absolute;
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  left: 294px;
-bottom: 197px;
-z-index: 4;
-  -moz-transform:    rotate(70deg);
-  -webkit-transform: rotate(70deg);
-  -ms-transform:     rotate(70deg);
-  -o-transform:      rotate(70deg);
 }
 .capShieldStar2{
   position: absolute;
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  left: 294px;
-bottom: 197px;
-z-index: 4;
+  -moz-transform:    rotate(70deg);
+  -webkit-transform: rotate(70deg);
+  -ms-transform:     rotate(70deg);
+  -o-transform:      rotate(70deg);
+}
+.capShieldStar3{
+  position: absolute;
+  border-right:  18px solid transparent;
+  border-top: 12.5px  solid #FFFFF0;
+  border-left:   18px solid transparent;
   -moz-transform:    rotate(-70deg);
   -webkit-transform: rotate(-70deg);
   -ms-transform:     rotate(-70deg);
