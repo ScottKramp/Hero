@@ -1436,9 +1436,10 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 350px;
-  left: 230px;
+  left: 590px;
   border-radius: 18px;
   z-index: 2;
+  visibility: hidden;
 }
 .capNeck{
   height: 19px;
@@ -1446,8 +1447,9 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 335px;
-  left: 240px;
+  left: 600px;
   z-index: 1;
+  visibility: hidden;
 }
 .capRightThigh{
   height: 115px;
@@ -1455,9 +1457,10 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 100px;
-  left: 255px;
+  left: 615px;
   border-radius: 15px; 
   z-index: 2;
+  visibility: hidden;
 }
 .capLeftThigh{
   height: 115px;
@@ -1465,9 +1468,10 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 100px;
-  left: 215px;
+  left: 575px;
   border-radius: 15px; 
   z-index: 2;
+  visibility: hidden;
 }
 .capRightShin{
   height: 100px;
@@ -1475,9 +1479,10 @@ body{
   background-color: #e74c3c;
   position: absolute;
   bottom: 20px;
-  left: 255px;
+  left: 615px;
   border-radius: 15px;
   z-index: 1;
+  visibility: hidden;
 }
 .capLeftShin{
   height: 100px;
@@ -1485,14 +1490,15 @@ body{
   background-color: #e74c3c;
   position: absolute;
   bottom: 20px;
-  left: 215px;
+  left: 575px;
   border-radius: 15px;
   z-index: 1;
+  visibility: hidden;
 }
 .capTorso{
   position: absolute;
   bottom: 250px;
-  left: 200px;
+  left: 560px;
   height: 0;
   width: 60px;
   border-top: 85px solid #2980b9;
@@ -1500,16 +1506,18 @@ body{
   border-right: 20px solid transparent;
   z-index: 1;
   border-radius: 20px;
+  visibility: hidden;
 }
 .capGroin{
   width: 40px;
   position: absolute;
   bottom: 200px;
-  left: 220px;
+  left: 580px;
   border-top: 50px solid #e74c3c;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   z-index: 3;
+  visibility: hidden;
 }
 .capLeftShoulder{
   height: 30px;
@@ -1517,8 +1525,9 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 305px;
-  left: 190px;
+  left: 550px;
   border-radius: 15px;
+  visibility: hidden;
 }
 .capRightShoulder{
   height: 30px;
@@ -1526,26 +1535,62 @@ body{
   background-color: #2980b9;
   position: absolute;
   bottom: 305px;
-  left: 280px;
+  left: 640px;
   border-radius: 15px;
+  visibility: hidden;
 }
 .capLeftBicep{
   height: 70px;
   width: 25px;
-  background-color: #FFFFF0;
-  position: absolute;
   bottom: 250px;
-  left: 180px;
-  border-radius: 15px;
+  left: 540px;
+  position: absolute;
+  visibility: hidden;
+  transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
 }
-.capRightBicep{
+.capLeftBicep1{
   height: 70px;
   width: 25px;
   background-color: #FFFFF0;
   position: absolute;
-  bottom: 250px;
-  left: 295px;
   border-radius: 15px;
+}
+.capLeftBicep2{
+  height: 35px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.capRightBicep{
+  height: 70px;
+  width: 25px;
+  position: absolute;
+  bottom: 250px;
+  left: 655px;
+  visibility: hidden;
+}
+.capRightBicep1{
+  height: 70px;
+  width: 25px;
+  background-color: #FFFFF0;
+  position: absolute;
+  border-radius: 15px;
+}
+.capRightBicep2{
+  height: 35px;
+  width: 25px;
+  background-color: #2980b9;
+  position: absolute;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .capLeftForearm{
   height: 55px;
@@ -1553,9 +1598,15 @@ body{
   background-color: #e74c3c;
   position: absolute;
   bottom: 205px;
-  left: 180px;
+  left: 540px;
   border-radius: 15px;
   z-index: 1;
+  visibility: hidden;
+  transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
 }
 .capRightForearm{
   height: 55px;
@@ -1563,53 +1614,64 @@ body{
   background-color: #e74c3c;
   position: absolute;
   bottom: 205px;
-  left: 295px;
+  left: 655px;
   border-radius: 15px;
   z-index: 1;
+  visibility: hidden;
 }
 .capRightFoot{
   position: absolute;
   bottom: 0px;
-  left: 258px;
+  left: 618px;
   width: 20px;
   border-bottom: 25px solid #e74c3c;
   border-left: 5px solid #e74c3c;
   border-right: 10px solid transparent;
+  visibility: hidden;
 }
 .capLeftFoot{
   position: absolute;
   bottom: 0px;
-  left: 207px;
+  left: 567px;
   width: 20px;
   border-bottom: 25px solid #e74c3c;
   border-right: 5px solid #e74c3c;
   border-left: 10px solid transparent;
+  visibility: hidden;
 }
 .capRightHand{
   width: 15px;
   position: absolute;
   bottom: 180px;
-  left: 180px;
+  left: 540px;
   border-top: 40px solid #e74c3c;
   border-left: 10px solid transparent;
+  visibility: hidden;
+  transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
 }
 .capLeftHand{
   width: 15px;
   position: absolute;
   bottom: 180px;
-  left: 295px;
+  left: 655px;
   border-top: 40px solid #e74c3c;
   border-right: 10px solid transparent;
+  visibility: hidden;
 }
 .capBelt{
   width: 54px;
   position: absolute;
   bottom: 235px;
-  left: 220px;
+  left: 580px;
   border-top: 15px solid #34495e;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   z-index: 3;
+  visibility: hidden;
 }
 .capBelt1{
   height: 9px;
@@ -1618,30 +1680,9 @@ body{
   border: 3px solid #34495e;
   position: absolute;
   bottom: 235px;
-  left: 237px;
+  left: 597px;
   z-index: 3;
-}
-.capLeftBicep1{
-  height: 35px;
-  width: 25px;
-  background-color: #2980b9;
-  position: absolute;
-  bottom: 285px;
-  left: 180px;
-  border-radius: 15px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.capRightBicep1{
-  height: 35px;
-  width: 25px;
-  background-color: #2980b9;
-  position: absolute;
-  bottom: 285px;
-  left: 295px;
-  border-radius: 15px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  visibility: hidden;
 }
 .capHead1{
   height: 26px;
@@ -1649,18 +1690,25 @@ body{
   background-color: #eebb99;
   position: absolute;
   bottom: 350px;
-  left: 238px;
+  left: 598px;
   border-radius: 18px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  visibility: hidden;
   z-index: 3;
+}
+.capStripes{
+  position: absolute;
+  bottom: 250px;
+  left: 572px;
+  widows: 60px;
+  height: 35px;
+  visibility: hidden;
 }
 .capStripe1{
   height: 0px;
   width: 7px;
   position: absolute;
-  bottom: 250px;
-  left: 212px;
   z-index: 3;
   border-top: 35px solid #e74c3c;
   border-left: 8px solid transparent;
@@ -1670,44 +1718,41 @@ body{
   width: 15px;
   background-color: #FFFFF0;
   position: absolute;
-  bottom: 250px;
-  left: 227px;
   z-index: 3;
+  left: 15px;
 }
 .capStripe3{
   height: 35px;
   width: 15px;
   background-color: #e74c3c;
   position: absolute;
-  bottom: 250px;
-  left: 242px;
   z-index: 3;
+  left: 30px;
 }
 .capStripe4{
   height: 35px;
   width: 16px;
   background-color: #FFFFF0;
   position: absolute;
-  bottom: 250px;
-  left: 257px;
   z-index: 3;
+  left: 45px;
 }
 .capStripe5{
   height: 0px;
   width: 7px;
   position: absolute;
-  bottom: 250px;
-  left: 273px;
   z-index: 3;
   border-top: 35px solid #e74c3c;
   border-right: 8px solid transparent;
+  left: 60px;
 }
 .capChestStar{
   position: absolute;
-  left: 232px;
+  left: 592px;
   bottom: 280px;
   height: 36px;
   width: 36px;
+  visibility: hidden;
 }
 .capChestStar1{
   border-right:  18px solid transparent;
@@ -1721,10 +1766,10 @@ body{
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
   z-index: 3;
-  -moz-transform:    rotate(70deg);
-  -webkit-transform: rotate(70deg);
-  -ms-transform:     rotate(70deg);
-  -o-transform:      rotate(70deg);
+  -moz-transform:    rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  -ms-transform:     rotate(72deg);
+  -o-transform:      rotate(72deg);
   position: absolute;
 }
 .capChestStar3{
@@ -1733,48 +1778,54 @@ body{
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
   z-index: 3;
-  -moz-transform:    rotate(-70deg);
-  -webkit-transform: rotate(-70deg);
-  -ms-transform:     rotate(-70deg);
-  -o-transform:      rotate(-70deg);
+  -moz-transform:    rotate(-71deg);
+  -webkit-transform: rotate(-71deg);
+  -ms-transform:     rotate(-71deg);
+  -o-transform:      rotate(-71deg);
 }
 .capA{
   position: absolute;
   color: #FFFFF0;
-  left: 244px;
+  left: 604px;
   bottom: 380px;
   z-index: 3;
+  visibility: hidden;
 }
 .capRightWing{
   width: 0px;
   position: absolute;
   bottom: 388px;
-  left: 262px;
+  left: 622px;
   border-bottom: 10px solid #bdc3c7;
   border-left: 10px solid transparent;
   z-index: 3;
   transform: rotate(13deg);
   -ms-transform: rotate(13deg);
   -webkit-transform: rotate(13deg);
+  visibility: hidden;
 }
 .capLeftWing{
   width: 0px;
   position: absolute;
   bottom: 388px;
-  left: 228px;
+  left: 588px;
   border-bottom: 10px solid #bdc3c7;
   border-right: 10px solid transparent;
   z-index: 3;
   transform: rotate(-13deg);
   -ms-transform: rotate(-13deg);
   -webkit-transform: rotate(-13deg);
+  visibility: hidden;
 }
 .capShield{
   position: absolute;
   width: 135px;
   height: 135px;
-  bottom: 130px;
-  left: 250px;
+  bottom: 400px;
+  left: 540px;
+  visibility: hidden;
+  z-index: 4;
+  display: none;
 }
 .capShield1{
   height: 105px;
@@ -1815,24 +1866,81 @@ body{
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  -moz-transform:    rotate(70deg);
-  -webkit-transform: rotate(70deg);
-  -ms-transform:     rotate(70deg);
-  -o-transform:      rotate(70deg);
+  -moz-transform:    rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  -ms-transform:     rotate(72deg);
+  -o-transform:      rotate(72deg);
 }
 .capShieldStar3{
   position: absolute;
   border-right:  18px solid transparent;
   border-top: 12.5px  solid #FFFFF0;
   border-left:   18px solid transparent;
-  -moz-transform:    rotate(-70deg);
-  -webkit-transform: rotate(-70deg);
-  -ms-transform:     rotate(-70deg);
-  -o-transform:      rotate(-70deg);
+  -moz-transform:    rotate(-71deg);
+  -webkit-transform: rotate(-71deg);
+  -ms-transform:     rotate(-71deg);
+  -o-transform:      rotate(-71deg);
 }
-
-
-
+.magnetoHelmet{
+  position: absolute;
+  background-color: #870619;
+  height: 50px;
+  width: 40px;
+  bottom: 350px;
+  left: 230px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  z-index: 2;
+  /*visibility: hidden;*/
+}
+.magnetoFace1{
+  position: absolute;
+  background-color: #eebb99;
+  width: 8px;
+  left: 16px;
+  height: 25px;
+  bottom: 0px;
+}
+.magnetoFace2{
+  position: absolute;
+  background-color: #eebb99;
+  width: 8px;
+  left: 16px;
+  height: 18px;
+  bottom: 20px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  transform: rotate(60deg); 
+  -ms-transform: rotate(60deg); 
+  -webkit-transform: rotate(60deg); 
+  -moz-transform: rotate(60deg); 
+  -o-transform: rotate(60deg); 
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
+.magnetoFace3{
+  position: absolute;
+  background-color: #eebb99;
+  width: 8px;
+  left: 16px;
+  height: 18px;
+  bottom: 20px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
 
 
 

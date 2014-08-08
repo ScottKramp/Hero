@@ -1887,7 +1887,171 @@ $(".thorStart").click(function(){
 })
 
 $(".capStart").click(function(){
-
+	$("body").scrollTo(50)
+	setTimeout(function(){
+		$(".capHead").css("visibility", "visible");
+		$(".capNeck").css("visibility", "visible");
+		$(".capRightThigh").css("visibility", "visible");
+		$(".capLeftThigh").css("visibility", "visible");
+		$(".capRightShin").css("visibility", "visible");
+		$(".capLeftShin").css("visibility", "visible");
+		$(".capTorso").css("visibility", "visible");
+		$(".capGroin").css("visibility", "visible");
+		$(".capLeftShoulder").css("visibility", "visible");
+		$(".capRightShoulder").css("visibility", "visible");
+		$(".capLeftBicep").css("visibility", "visible");
+		$(".capRightBicep").css("visibility", "visible");
+		$(".capLeftForearm").css("visibility", "visible");
+		$(".capRightForearm").css("visibility", "visible");
+		$(".capLeftFoot").css("visibility", "visible");
+		$(".capRightFoot").css("visibility", "visible");
+		$(".capLeftHand").css("visibility", "visible");
+		$(".capRightHand").css("visibility", "visible");
+		$(".capBelt").css("visibility", "visible");
+		$(".capBelt1").css("visibility", "visible");
+		$(".capHead1").css("visibility", "visible");
+		$(".capStripes").css("visibility", "visible");
+		$(".capChestStar").css("visibility", "visible");
+		$(".capA").css("visibility", "visible");
+		$(".capRightWing").css("visibility", "visible");
+		$(".capLeftWing").css("visibility", "visible");
+		$(".capHead").animate({left: "230px"}, 300);
+		$(".capNeck").animate({left: "240px"}, 300);
+		$(".capRightThigh").animate({left: "255px"}, 300);
+		$(".capLeftThigh").animate({left: "215px"}, 300);
+		$(".capRightShin").animate({left: "255px"}, 300);
+		$(".capLeftShin").animate({left: "215px"}, 300);
+		$(".capTorso").animate({left: "200px"}, 300);
+		$(".capGroin").animate({left: "220px"}, 300);
+		$(".capLeftShoulder").animate({left: "190px"}, 300);
+		$(".capRightShoulder").animate({left: "280px"}, 300);
+		$(".capLeftBicep").animate({left: "180px"}, 300);
+		$(".capRightBicep").animate({left: "295px"}, 300);
+		$(".capLeftForearm").animate({left: "180px"}, 300);
+		$(".capRightForearm").animate({left: "295px"}, 300);
+		$(".capLeftFoot").animate({left: "207px"}, 300);
+		$(".capRightFoot").animate({left: "258px"}, 300);
+		$(".capLeftHand").animate({left: "295px"}, 300);
+		$(".capRightHand").animate({left: "180px"}, 300);
+		$(".capBelt").animate({left: "220px"}, 300);
+		$(".capBelt1").animate({left: "237px"}, 300);
+		$(".capHead1").animate({left: "238px"}, 300);
+		$(".capStripes").animate({left: "212px"}, 300);
+		$(".capChestStar").animate({left: "232px"}, 300);
+		$(".capA").animate({left: "244px"}, 300);
+		$(".capRightWing").animate({left: "262px"}, 300);
+		$(".capLeftWing").animate({left: "228px"}, 300);
+	}, 1000)
+	setTimeout(function(){
+		$(".leftBicep").css("visibility", "hidden");
+		$(".leftForearm").css("visibility", "hidden");
+		$(".rightHand").css("visibility", "hidden");
+		$(".capShield").css("visibility", "visible");
+		$(".capShield").css("display", "block");
+		$(".capShield").animate({left: "50px", bottom: "0px"}, 100, "linear");
+		
+	}, 2000)
+	setTimeout(function(){
+		$(".capShield").animate({left: "0px", bottom: "50px"}, 50, "linear");
+		
+	}, 2100)
+	setTimeout(function(){
+		$(".capShield").animate({left: "365px", bottom: "150px"}, 100, "linear");
+		
+	}, 2150)
+	setTimeout(function(){
+		$(".capShield").animate({left: "0px", bottom: "250px"}, 100, "linear");
+		
+	}, 2250)
+	setTimeout(function(){
+		$(".capShield").animate({left: "365px", bottom: "365px"}, 100, "linear");
+		
+	}, 2250)
+	setTimeout(function(){
+		$(".capShield").animate({left: "0px", bottom: "250px"}, 100, "linear");
+		
+	}, 2350)
+	setTimeout(function(){
+		$(".capShield").animate({left: "365px", bottom: "50px"}, 100, "linear");
+		
+	}, 2450)
+	setTimeout(function(){
+		$(".capShield").animate({left: "315px", bottom: "0px"}, 100, "linear");
+		
+	}, 2500)
+	setTimeout(function(){
+		$(".capShield").animate({left: "245px", bottom: "140px"}, 100, "linear");
+	}, 2600)
+	setTimeout(function(){
+		$({deg: 0}).animate({deg: 30}, {
+	    	duration: 500,
+	    	step: function(now) {
+	        	$(".capLeftBicep").css({
+	            	transform: 'rotate(' + now + 'deg)'
+	    	    });
+	    	}
+	    });
+	    $(".capLeftForearm").animate({left: "150px"}, 500)
+	    $(".capRightHand").animate({bottom: "195px"}, 500)
+	    $({deg: 0}).animate({deg: -50}, {
+	    	duration: 500,
+	    	step: function(now) {
+	    	    $(".capLeftForearm").css({
+	            	transform: 'rotate(' + now + 'deg)'
+	    	    });
+	    	    $(".capRightHand").css({
+	            	transform: 'rotate(' + now + 'deg)'
+	    	    });
+	    	}
+	    });
+	}, 3500)
+	setTimeout(function(){
+		$({deg: 0}).animate({deg: 115}, {
+	    	duration: 750,
+	    	step: function(now) {
+	    	    $(".capShield").css({
+	            	transform: 'scale(' + now + ')'
+	    	    });
+	    	}
+	    });
+	}, 4500)
+	setTimeout(function(){
+		$(".leftBicep").css("visibility", "visible")
+		$(".leftForearm").css("visibility", "visible")
+		$(".rightHand").css("visibility", "visible")
+		$(".capHead").css({left: "590px", visibility: "hidden"});
+		$(".capNeck").css({left: "600px", visibility: "hidden"});
+		$(".capRightThigh").css({left: "615px", visibility: "hidden"});
+		$(".capLeftThigh").css({left: "575px", visibility: "hidden"});
+		$(".capRightShin").css({left: "615px", visibility: "hidden"});
+		$(".capLeftShin").css({left: "575px", visibility: "hidden"});
+		$(".capTorso").css({left: "560px", visibility: "hidden"});
+		$(".capGroin").css({left: "580px", visibility: "hidden"});
+		$(".capLeftShoulder").css({left: "550px", visibility: "hidden"});
+		$(".capRightShoulder").css({left: "640px", visibility: "hidden"});
+		$(".capLeftBicep").css({left: "540px", transform: "rotate(0deg)", visibility: "hidden"});
+		$(".capRightBicep").css({left: "655px", visibility: "hidden"});
+		$(".capLeftForearm").css({left: "540px", transform: "rotate(0deg)", visibility: "hidden"});
+		$(".capRightForearm").css({left: "655px", visibility: "hidden"});
+		$(".capLeftFoot").css({left: "567px", visibility: "hidden"});
+		$(".capRightFoot").css({left: "618px", visibility: "hidden"});
+		$(".capLeftHand").css({left: "655px", visibility: "hidden"});
+		$(".capRightHand").css({left: "540px", transform: "rotate(0deg)", bottom: "180px", visibility: "hidden"});
+		$(".capBelt").css({left: "580px", visibility: "hidden"});
+		$(".capBelt1").css({left: "597px", visibility: "hidden"});
+		$(".capHead1").css({left: "598px", visibility: "hidden"});
+		$(".capStripes").css({left: "572px", visibility: "hidden"});
+		$(".capChestStar").css({left: "592px", visibility: "hidden"});
+		$(".capA").css({left: "604px", visibility: "hidden"});
+		$(".capRightWing").css({left: "622px", visibility: "hidden"});
+		$(".capLeftWing").css({left: "588px", visibility: "hidden"});
+	}, 4600)
+	setTimeout(function(){
+		$(".capShield").fadeOut(750);
+	}, 5000)
+	setTimeout(function(){
+		$(".capShield").css({transform: "scale(1)", visibility: "hidden", left: "540px", bottom: "400px"})
+	}, 6000)
 })
 
 
